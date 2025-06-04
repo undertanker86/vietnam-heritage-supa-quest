@@ -62,6 +62,9 @@ const Index = () => {
               <div className="max-w-sm mx-auto">
                 <GoogleLoginButton />
               </div>
+              <p className="text-white/70 text-sm mt-4">
+                Chỉ cần tài khoản Google - không cần đăng ký riêng!
+              </p>
             </div>
           ) : (
             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/30">
@@ -71,7 +74,10 @@ const Index = () => {
               <p className="text-white/90 mb-6">
                 Sẵn sàng tiếp tục cuộc phiêu lưu khám phá di sản Việt Nam?
               </p>
-              <button className="bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+              <button 
+                className="bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                onClick={() => console.log('Start game clicked')}
+              >
                 Bắt đầu chơi 🚀
               </button>
             </div>
